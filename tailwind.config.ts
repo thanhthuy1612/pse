@@ -10,8 +10,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        bg: "url('@/public/bg.jpg')",
-        bg1: "url('@/public/bg-1.jpg')",
+        bg: "url('../public/bg.jpg')",
+        bg1: "url(../public/bg-1.jpg')",
       },
       backgroundPosition: {
         custom: "40% 100%",
