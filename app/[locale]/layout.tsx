@@ -4,6 +4,7 @@ import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import Footer from "@/components/footer/Footer";
+import Message from "@/components/message/Message";
 
 export default async function RootLayout({
   children,
@@ -24,6 +25,7 @@ export default async function RootLayout({
     <NextIntlClientProvider messages={messages}>
       <Header />
       {children}
+      <Message />
       <Footer />
     </NextIntlClientProvider>
   );
